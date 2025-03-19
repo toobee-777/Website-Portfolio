@@ -1,6 +1,8 @@
 /*Universal Styles*/
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 /*Header*/
 .topHeader {
@@ -20,9 +22,10 @@ body {
 }
 
 #logo img {
-    height: 175px;
+    height: 150px;
     width: auto;
     padding-left: 60px;
+
 }
 
 #links {
@@ -62,6 +65,7 @@ body {
   margin: 4px 2px;
   border-radius: 12px;
   transition: all 250ms linear;
+  font-weight: bold;
 }
 
 #links .button:hover {
@@ -108,7 +112,6 @@ body {
 /*Projects Styles*/
 .projects {
     background-color: #a7bafe;
-    
     border-bottom: 25px solid #fea7ef;
 }
 
