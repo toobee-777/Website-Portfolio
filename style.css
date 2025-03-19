@@ -1,0 +1,107 @@
+/*Universal Styles*/
+
+/*Header*/
+.topHeader {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffcf3b;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    height: 150px;
+    width: 100%;
+    border-bottom: 3px solid #855c75;
+    gap: 1rem;
+}
+
+#logo img {
+    height: 175px;
+    width: auto;
+    padding-left: 60px;
+}
+
+#links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#links ul {
+    display: flex;
+    list-style: none;
+    padding: 15px;
+    margin: 10px;
+}
+
+#links li {
+    margin-left: 20px;
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 250ms linear;
+}
+
+#links li:hover {
+    color: #85afff;
+}
+
+.button {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  border-radius: 12px;
+  transition: all 250ms linear;
+}
+
+#links .button:hover {
+    background-color: #85afff;
+}
+
+#about-container {
+    display: grid;
+    grid-template-areas: "header header" "content photo";
+    grid-template-columns: 5fr 1fr;
+   gap: 5px;
+   align-content: center;
+    width: 100%;
+    padding-top: 12rem;
+    max-height: 700px;
+    background-color: #c4dc49;
+    background-size: cover;
+   padding-left: 25px;
+}
+
+#about-container .header {
+    grid-area: header;
+    text-align: center;
+    text-decoration: underline;
+    font-family: "Rock Salt", cursive;
+}
+#about-container .content {
+    grid-area: content;
+    font-family: "Open Sans", sans-serif;
+    border: 2px solid black;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#about-container .photo img {
+    grid-area: photo;
+    justify-self: right;
+    margin-right: 10px;
+    max-height: 250px;
+    max-width: auto;
+    border: 2px solid black;
+}
+
+/*Projects Styles*/
+
