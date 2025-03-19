@@ -108,13 +108,13 @@ body {
 /*Projects Styles*/
 .projects {
     background-color: #a7bafe;
-    border-top: 3px solid #fea7ef;
+    
     border-bottom: 25px solid #fea7ef;
 }
 
 .projects h2 {
     font-family: "Rock Salt", cursive;
-    font-size: 20px;
+    font-size: 25px;
     text-decoration: underline;
     background-color: #fea7ef;
     padding: 15px;
@@ -122,4 +122,8 @@ body {
 
 .projects li {
     font-weight: bold;
+    font-size: 20px;
+}
+.projects i {
+    font-size: 16px;
 }
