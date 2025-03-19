@@ -1,5 +1,8 @@
 /*Universal Styles*/
-
+body {
+    margin: 0;
+    overflow: hidden;
+}
 /*Header*/
 .topHeader {
     position: fixed;
@@ -71,7 +74,7 @@
     grid-template-areas: "header header" "content photo";
     grid-template-columns: 5fr 1fr;
    gap: 5px;
-   align-content: center;
+   float: left;
     width: 100%;
     padding-top: 12rem;
     max-height: 700px;
@@ -104,4 +107,20 @@
 }
 
 /*Projects Styles*/
+.projects {
+    background-color: #a7bafe;
+    margin: 15px;
+    padding: 15px;
+}
 
+.projects h2 {
+    font-family: "Rock Salt", cursive;
+    font-size: 20px;
+    text-decoration: underline;
+    background-color: #fea7ef;
+    padding: 15px;
+}
+
+.projects li {
+    font-weight: bold;
+}
