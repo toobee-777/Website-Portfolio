@@ -1,7 +1,6 @@
 /*Universal Styles*/
 body {
     margin: 0;
-    overflow: hidden;
 }
 /*Header*/
 .topHeader {
@@ -109,8 +108,8 @@ body {
 /*Projects Styles*/
 .projects {
     background-color: #a7bafe;
-    margin: 15px;
-    padding: 15px;
+    border-top: 3px solid #fea7ef;
+    border-bottom: 25px solid #fea7ef;
 }
 
 .projects h2 {
