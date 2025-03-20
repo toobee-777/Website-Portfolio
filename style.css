@@ -79,11 +79,12 @@
    gap: 5px;
    float: left;
     width: 100%;
-    padding-top: 12rem;
+    padding-top: 10rem;
     max-height: 700px;
     background-color: #c4dc49;
     background-size: cover;
-   padding-left: 25px;
+    padding-left: 15px;
+   padding-bottom: 15px;
 }
 
 #about-container .header {
@@ -95,8 +96,8 @@
 #about-container .content {
     grid-area: content;
     font-family: "Open Sans", sans-serif;
-    border: 2px solid black;
-    font-size: 25px;
+    border: 2px dashed black;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -148,6 +149,7 @@
     color: black;
     transform: rotateY(180deg);
     text-decoration: none;
+    border: 2px dashed black;
   }
 
   #self .flip-card-back h2 {
@@ -187,3 +189,5 @@
 .projects i {
     font-size: 16px;
 }
+
+/*Resume Styles*/
