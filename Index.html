@@ -20,6 +20,9 @@
                 <a href="projects.html">
                     <li>Projects</li>
                 </a>
+                <a href="resume.html">
+                    <li>Resume</li>
+                </a>
                 <a href="https://github.com/dashboard">
                     <li>Github</li>
                 </a>
@@ -37,7 +40,9 @@
     <div id="about-container" class="aboutMeFlex">
     <div class="header"><h1>Hello World! I'm Toby Kutz</h1></div>
     <div class="content"><p>I am a New Jersey transplant from the midwest who is currently working at Princeton's Marquand library as a collections specialist. I'm a self-taught front end developer who is just starting their developer journey! I love working on projects that are bold, colorful and unique! When I'm not coding, I enjoy going on long hikes, cooking extravagent dishes, and playing card games. My learning is constantly growing and evolving, and with that so is this website! Have fun exploring my projects, and reach out to me
-            with any inquiries.</p></div>
+            with any inquiries.</p>
+            <br>
+            <p>Fun fact: I have been coding for <span id="time-container"></span> seconds!</p></div>
             <div id="self" class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
@@ -76,47 +81,22 @@
         <i>App developed in Kotlin using Android Studio as part of a machine project. 
             Using skills learned in this course, I was able to develop both the front and back end of this app to allow it to be edited by users to add additional places to a map.</i>
         </ul>
-</div>
-    <!--Resume/Experience-->
-    <div class="resume">
-    <h2>Resume</h2>
-    <div class="education">
-    <h3>Education</h3>
-    <ul>
-        <li>University of Pennsylvania - Graduate School of Education - Certificate of Education - August 2023 - June 2024</li>
-        <i>GPA: 3.7</i>
-        <li>University of Illinois at Urbana-Champaign - BA in Biological Anthropology, Minor in Art + Design, Forensic Science certificate - August 2019 – May 2023</li>
-        <i>GPA: 3.7</i>
-    </ul>
-</div>
-<div class="work">
-    <h3>Work Experience</h3>
-    <ul>
-        <li>Library Collections Specialist II - Marquand Library, Princeton University</li>
-        <i>December 2024 - Present</i>
-        <li>Forensic Science and Environmental Science Teacher - Penn Treaty High School</li>
-        <i>September 2023 - June 2024</i>
-        <li>Student Library Assistant - University of Illinois</li>
-        <i>June 2021 - May 2023</i>
-        <li>Assistant Manager, Barista and Baker - Baker Street Café.</li>
-        <i>August 2016 – August 2019</i>
-    </ul>
-</div>
-<div class="programming">
-    <h3>Programming Experience</h3>
-    <ul>
-        <li>Codecademy Courses</li>
-        <i>2023-Present: </i>
-        <i>Worked with HTML, CSS, JavaScript, and SQL</i>
-        <li>Self-led projects</li>
-        <li>Graphic design work for local queer newsletter</li>
-        <i>2022-2023</i>
-        <li>Computer Science Courses at University of Illinois</li>
-        <i>2022-2023: </i>
-        <i> Worked with Kotlin and C++</i>
-    </ul>
-</div>
-</div>
+    </div>
+    <script>
+        const timeContainer = document.getElementById("time-container");
+        const START_DAY = "08-17-2022";
+        const START_DAY_DATE = new Date(START_DAY);
+        const intlNumberFormatter = new Intl.NumberFormat("en-US");
+    
+        setInterval(() => {
+          const now = new Date();
+          const difference = Math.floor(
+            (now.getTime() - START_DAY_DATE.getTime()) / 1000
+          );
+    
+          timeContainer.innerText = intlNumberFormatter.format(difference);
+        }, 1000);
+      </script>
 </body>
 
 </html>

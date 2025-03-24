@@ -195,6 +195,7 @@
 
 /*Resume Styles*/
 .resume {
+  margin-top: 9rem;
   background-color: bisque;
   font-family: "Open Sans", sans-serif;
   padding-left:10px;
@@ -214,7 +215,13 @@
   background-color: #c4dc49;
   padding-top:10px;
   padding-bottom: 10px;
+}
 
+.skills {
+  background-color: #ffcf3b;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .work {
