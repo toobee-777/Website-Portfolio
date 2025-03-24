@@ -19,6 +19,7 @@
     width: 100%;
     border-bottom: 3px solid #855c75;
     gap: 1rem;
+    z-index: 10;
 }
 
 #logo img {
@@ -119,6 +120,7 @@
     text-align: center;
     margin: 5px;
     perspective: 1000px;
+    z-index: 1;
   }
   
   .flip-card-inner {
@@ -185,9 +187,46 @@
 .projects li {
     font-weight: bold;
     font-size: 20px;
+    list-style:none;
 }
 .projects i {
     font-size: 16px;
 }
 
 /*Resume Styles*/
+.resume {
+  background-color: bisque;
+  font-family: "Open Sans", sans-serif;
+  padding-left:10px;
+  padding-right: 10px;
+  padding-bottom: 10PX;
+}
+
+.resume h2 {
+  font-family: "Rock Salt", cursive;
+}
+
+.resume li {
+  list-style:none;
+}
+
+.education {
+  background-color: #c4dc49;
+  padding-top:10px;
+  padding-bottom: 10px;
+
+}
+
+.work {
+  margin-top: 10px;
+  background-color:#a7bafe;
+  padding-top:10px;
+  padding-bottom: 10px;
+}
+
+.programming {
+  background-color: #fea7ef;
+  padding-top:10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
