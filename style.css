@@ -58,12 +58,12 @@
   background-color: white;
   border: 2px solid black;
   color: black;
-  padding: 10px;
+  padding: 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
-  margin: 4px 2px;
+  margin: 4px 3px;
   border-radius: 12px;
   transition: all 250ms linear;
   font-weight: bold;
