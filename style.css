@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 /*Header*/
 .topHeader {
@@ -48,6 +49,7 @@
     font-weight: bold;
     font-size: 20px;
     transition: color 250ms linear;
+    text-align: center;
 }
 
 #links li:hover {
@@ -86,6 +88,8 @@
     background-size: cover;
     padding-left: 15px;
    padding-bottom: 15px;
+   border: 20px solid #fcb37b;
+   border-top: 25px solid #fcb37b;
 }
 
 #about-container .header {
@@ -94,12 +98,17 @@
     text-decoration: underline;
     font-family: "Rock Salt", cursive;
 }
+
 #about-container .content {
     grid-area: content;
-    font-family: "Open Sans", sans-serif;
     border: 2px dashed black;
     font-size: 20px;
     font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+}
+
+#about-container span {
+  color: white;
 }
 
 #about-container .photo img {
@@ -174,6 +183,7 @@
 .projects {
     background-color: #a7bafe;
     border-bottom: 25px solid #fea7ef;
+    font-family: "Open Sans", sans-serif;
 }
 
 .projects h2 {
@@ -269,5 +279,5 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: #c4dc49;
   padding: 25px;
-
+  font-family: "Open Sans", sans-serif;
 }
