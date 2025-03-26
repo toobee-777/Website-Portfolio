@@ -10,36 +10,40 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Rock+Salt&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <header class="topHeader">
+    <header>
         <div id="logo"><a href="Index.html"><img src="Resources\Images\T.png" alt="Toby Kutz: Front End" /></a></div>
-        <nav id="links">
-            <ul>
+        <div id="myTopNav" class="topNav">
+            <a href="contact.html">
+                <button class="button">Let's Collaborate</button>
+            </a>
                 <a href="projects.html">
-                    <li>Projects</li>
+                    Projects
                 </a>
                 <a href="resume.html">
-                    <li>Resume</li>
+                    Resume
                 </a>
                 <a href="https://github.com/dashboard">
-                    <li>Github</li>
+                    Github
                 </a>
                 <a href="https://www.linkedin.com/in/toby-kutz-a17438244/">
-                    <li>Linkedin</li>
+                    Linkedin
                 </a>
-            </ul>
-            <a href="contact.html">
-            <button class="button">Let's Collaborate</button>
-        </a>
-        </nav>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+            
+            
+    </div>
     </header>
 
     <!--Introduction-->
     <div id="about-container" class="aboutMeFlex">
     <div class="header"><h1>Hello World! I'm Toby Kutz</h1></div>
-    <div class="content"><p>I am a New Jersey transplant from the midwest who is currently working at Princeton's Marquand library as a collections specialist. I'm a self-taught front end developer who is just starting their developer journey! I love working on projects that are bold, colorful and unique! When I'm not coding, I enjoy going on long hikes, cooking extravagent dishes, and playing card games. My learning is constantly growing and evolving, and with that so is this website! Have fun exploring my projects, and reach out to me
+    <div class="content"><p>I am an East Coast transplant from the midwest who is currently working at Princeton's Marquand library as a collections specialist. I'm a self-taught front end developer who is just starting their developer journey! I love working on projects that are bold, colorful and unique! When I'm not coding, I enjoy going on long hikes, cooking extravagent dishes, and playing card games. My learning is constantly growing and evolving, and with that so is this website! Have fun exploring my projects, and reach out to me
             with any inquiries.</p>
             <br>
             <p>Fun fact: I have been coding for <span id="time-container"></span> seconds!</p></div>
@@ -96,6 +100,15 @@
     
           timeContainer.innerText = intlNumberFormatter.format(difference);
         }, 1000);
+
+        function myFunction() {
+  var x = document.getElementById("myTopNav");
+  if (x.className === "topNav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topNav";
+  }
+}
       </script>
 </body>
 
