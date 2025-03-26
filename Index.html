@@ -16,10 +16,10 @@
 <body>
     <header>
         <div id="logo"><a href="Index.html"><img src="Resources\Images\T.png" alt="Toby Kutz: Front End" /></a></div>
+        <a href="contact.html">
+          <button class="button">Let's Collaborate</button>
+      </a>
         <div id="myTopNav" class="topNav">
-            <a href="contact.html">
-                <button class="button">Let's Collaborate</button>
-            </a>
                 <a href="projects.html">
                     Projects
                 </a>
@@ -86,30 +86,7 @@
             Using skills learned in this course, I was able to develop both the front and back end of this app to allow it to be edited by users to add additional places to a map.</i>
         </ul>
     </div>
-    <script>
-        const timeContainer = document.getElementById("time-container");
-        const START_DAY = "08-17-2022";
-        const START_DAY_DATE = new Date(START_DAY);
-        const intlNumberFormatter = new Intl.NumberFormat("en-US");
-    
-        setInterval(() => {
-          const now = new Date();
-          const difference = Math.floor(
-            (now.getTime() - START_DAY_DATE.getTime()) / 1000
-          );
-    
-          timeContainer.innerText = intlNumberFormatter.format(difference);
-        }, 1000);
-
-        function myFunction() {
-  var x = document.getElementById("myTopNav");
-  if (x.className === "topNav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topNav";
-  }
-}
-      </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
