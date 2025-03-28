@@ -11,31 +11,112 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Rock+Salt&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
 </head>
 <body>
     <header>
         <div id="logo"><a href="Index.html"><img src="Resources\Images\T.png" alt="Toby Kutz: Front End" /></a></div>
         <div id="myTopNav" class="topNav">
-            <a href="contact.html">
-                <button class="button">Let's Collaborate</button>
-            </a>
+            <div id="links" class="links">
+                <a href="Index.html">
+                    Home
+                </a>
                 <a href="projects.html">
                     Projects
                 </a>
-                <a href="resume.html">
+                <a  href="resume.html">
                     Resume
                 </a>
-                <a href="https://github.com/dashboard">
+                <a  href="https://github.com/dashboard">
                     Github
                 </a>
                 <a href="https://www.linkedin.com/in/toby-kutz-a17438244/">
                     Linkedin
                 </a>
+            </div>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
                   </a>
+                <a href="contact.html">
+                    <button class="button">Let's Collaborate</button>
+                </a>
     </div>
     </header>
+    <div class="projects">
+        <h2>Projects and Activities</h2>
+        <ul>
+            <li>Fotomatic Website</li>
+            <i>Practice making responsive webpages, created using static HTML and CSS</i>
+            <li>Playing with style and transitions</li>
+            <i>Created using HTML, CSS, and JavaScript</i>
+            <li>Birdie Bunch Webpage</li>
+            <i>Created using HTML, CSS, and JavaScript, practice with responsive webpages, JavaScript animations and transitions</i>
+            <li>The Lavender Newsletter - Graphic Design and Copy Editor</li>
+            <i>Curated and artfully designed physical and digital newsletters.
+                Researched and wrote journalistic articles, designed puzzles, and formatted newsletters.
+                Made final edits and proofread articles before publication.
+                Worked with local businesses to print, distribute, and sell newsletters.</i>
+            <li>"Favorite Places" Android App - CS 124</li>
+            <i>App developed in Kotlin using Android Studio as part of a machine project. 
+                Using skills learned in this course, I was able to develop both the front and back end of this app to allow it to be edited by users to add additional places to a map.</i>
+            </ul>
+        </div>
+        <div class="projectExamples">
+            <h2>Website and Project Examples</h2>
+            <div class="numberGuess">
+            <p class="title">Number Guesser</p>
+            <i>Using HTML, CSS, and JavaScript, I created a simple number guesser game. The objective is to guess the closest to the target number and beat the computer! More detailed instructions are below.</i>
+            <div class="game-container">
+                <div class="rounds">
+                  <p class="round-label">Round <span id="round-number">1</span></p>
+                  <p class="guess-label">Target Number: <span id="target-number">?</span></p>
+                </div>
+                <div class="instructions">
+                    <div class="instruction">
+                      <h3>Step 1</h3>
+                      <p>Input a number between 0 and 9</p>
+                    </div>
+                    <div class="instruction">
+                      <h3>Step 2</h3>
+                      <p>Click "Make a Guess" to submit your guess and see who won the round.</p>
+                    </div>
+                    <div class="instruction">
+                      <h3>Step 3</h3>
+                      <p>Click "Next Round" to play again.</p>
+                    </div>
+                  </div>
+                <div class="guessing-area">
+                  <div class="guess computer-guess">
+                    <div class="guess-title">
+                      <p class="guess-label">Computer</p>
+                      <p class="score-label">Score: <span id="computer-score">0</span></p>
+                    </div>
+                    <p id="computer-guess">?</p>
+                    <p class="winning-text" id="computer-wins"></p>
+                  </div>
+                  <div class="guess human-guess">
+                    <div class="guess-title">
+                      <p class="guess-label">You</p>
+                      <p class="score-label">Score: <span id="human-score">0</span></p>
+                    </div>
+                    <input type="number" id="human-guess" min=0 max=9 value=0>
+                    <div class="number-controls">
+                      <button class="number-control left" id="subtract" disabled>-</button>
+                      <button class="number-control right" id="add">+</button>
+                    </div>
+                    <button class="button" id="guess">Make a Guess</button>
+                  </div>
+                </div>
+          
+                <div class="next-round-container">
+                  <button class="button" id="next-round" disabled>Next Round</button>
+                </div>
+            </div>
+          
+              <script src="script.js"></script>
+              <script src="game.js"></script>
+            </div>
+        </div>
     <script src="script.js"></script>
 </body>
 </html>

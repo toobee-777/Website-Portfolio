@@ -21,3 +21,31 @@ function myFunction() {
     
           timeContainer.innerText = intlNumberFormatter.format(difference);
         }, 1000);
+
+    //Number Guesser
+    let humanScore = 0;
+let computerScore = 0;
+let currentRoundNumber = 1;
+
+// Write your code below:
+const generateTarget = () => {
+  let randomNum = Math.floor(Math.random() * 10);
+  return randomNum;
+};
+
+const compareGuesses = (human, comp, secretNum) => {
+   if (Math.abs(secretNum - human) <= Math.abs(secretNum - comp)) {
+    return true;
+  } else return false;
+};
+
+const updateScore = (winner) => {
+  if (winner === "human") {
+    humanScore++;
+  } else computerScore++;
+};
+
+const advanceRound = () => {
+  currentRoundNumber++;
+};
+
