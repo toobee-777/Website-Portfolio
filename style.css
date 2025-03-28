@@ -333,12 +333,21 @@ margin-left: 85px;}
 }
 
 .projects li {
+  display: block;
     font-weight: bold;
     font-size: 20px;
     list-style:none;
+    margin-left: 15px;
+    margin-right: 25px;
+    padding-left: 15px;
+    
 }
 .projects i {
+  display: block;
     font-size: 16px;
+    margin-left: 15px;
+    margin-right: 25px;
+    padding-left: 15px;
 }
 
 /*Media Queries for projects*/
