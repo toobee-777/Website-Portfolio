@@ -43,13 +43,17 @@ header{
 }
 
 .topNav a {
-    margin-left: 20px;
+    margin-left: 6px;
     color: black;
     font-weight: bold;
     font-size: 20px;
     transition: color 250ms linear;
     text-align: center;
     text-decoration: none;
+}
+
+#links {
+  margin-top: 20px;
 }
 
 .topNav a:hover {
@@ -69,7 +73,9 @@ header{
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
-  margin: 4px 3px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-left: 3px;
   border-radius: 12px;
   transition: all 250ms linear;
   font-weight: bold;
@@ -96,11 +102,14 @@ padding-left: 0px;}
     display: block;
     text-align: center;
   }
+
+  /*hide this?? Covers tabs OR gets hidden behind the logo...*/
   .button {
     font-size: 10px;
     width: 80px;
     height: auto;
     align-self: center;
+    margin-top: 20px;
   }
 }
 
@@ -129,6 +138,7 @@ padding-left: 0px;}
     font-size: 10px;
     width: 80px;
     height: auto;
+    margin-top: 25px;
   }
 }
 
@@ -193,14 +203,34 @@ padding-left: 0px;}
 }
 
 /*Media queries for about container*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1215px) {
   #about-container .header {grid-area: 1 / span 0;
-  font-size: 13px;}
+    font-size: 20px;}
+    #about-container .content {grid-area: 1 / span 0;
+    font-size: 16px;
+  margin-left: 25px;}
+    #about-container .photo img {max-height: 190px;
+    width: auto;
+  margin-right: 35px;}
+}
+@media screen and (max-width: 975px) and (min-width:600px){
+  #about-container .header {grid-area: 1 / span 0;
+  font-size: 16px;}
   #about-container .content {grid-area: 1 / span 0;
-  font-size: 12px;
-margin-left: 85px;}
+  font-size: 16px;
+margin-left: 125px;}
   #about-container .photo img {display: none;}
 }
+
+@media screen and (max-width: 600px) and (min-width: 320px) {
+  #about-container .header {grid-area: 1 / span 0;
+ font-size: 13px;}
+ #about-container .content {grid-area: 1 / span 0;
+ font-size: 12px;
+margin-left: 85px;}
+ #about-container .photo img {display: none;}
+}
+
 @media screen and (max-width: 320px) {
   #about-container .header {grid-area: 1 / span 0;
  font-size: 13px;}
@@ -264,13 +294,25 @@ margin-left: 85px;}
     font-weight: bold;
   }
 
-  #self .flip-card i {
+  #self .flip-card-back i {
     font-family: "Open Sans", sans-serif;
     font-size: 10px;
   }
 
   /*Media queries for flip card*/
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1215px) and (min-width: 976px) {
+    #self .flip-card-back h2 {
+      font-size: 12px;
+    }
+    #self .flip-card-back p {
+      font-size: 10px;
+      
+    }
+    #self .flip-card-back i {
+      font-size: 10px;
+    }
+  }
+  @media screen and (max-width: 975px) {
     .flip-card {display: none;}
   }
   
