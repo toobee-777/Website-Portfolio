@@ -66,8 +66,9 @@ header{
   display: none;
 }
 
+
 .button {
-  background-color: white;
+  background-color: #fcb37b;
   border: 2px solid black;
   color: black;
   padding: 15px;
@@ -653,3 +654,11 @@ input[type=number]::-webkit-inner-spin-button {
   color: #ec3636;
   font-weight: 700;
 }
+
+/*Footer Styles*/
+footer .icons{
+  height: 100px;
+  margin-top: 5px;
+  color: #85afff;
+  }
+  
