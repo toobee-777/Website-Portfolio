@@ -748,14 +748,22 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 /*Footer Styles*/
-#icons {
+footer {
   font-size: 20px;
   background-color: #f79be7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+#icons {
+  display: flex;
+  gap: 15px;
 }
 
 #icons i {
   color: black;
-  margin-top: 20px;
   transition: color 250ms linear;
 }
   
@@ -765,4 +773,9 @@ input[type=number]::-webkit-inner-spin-button {
 
 #icons a {
   text-decoration: none;
+}
+
+#copyright {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
 }
