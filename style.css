@@ -317,7 +317,7 @@ margin-left: 85px;}
     }
   }
   @media screen and (max-width: 975px) {
-    #self .flip-card {display: none;}
+    #self .flip-card, #self .flip-card-back {display: none;}
   }
 
 /*Other works styles*/
@@ -501,10 +501,12 @@ margin-left: 85px;}
   font-family: "Rock Salt", cursive;
   text-align: center;
   text-decoration: underline;
+  margin-left: 10px;
 }
 
 .resume li {
   list-style:none;
+  margin-left: 10px;
 }
 
 .education {
