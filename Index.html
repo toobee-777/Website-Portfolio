@@ -4,8 +4,8 @@
 <head>
     <title>Toby Kutz's Portfolio</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Removed duplicate preconnect link to improve readability -->
+<!-- Removed duplicate preconnect link -->
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Rock+Salt&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
 
 <body>
     <header>
-        <div id="logo"><a href="Index.html"><img src="Resources\Images\T.png" alt="Toby Kutz: Front End" /></a></div>
+        <div id="logo"><a href="Index.html"><img src="Resources/Images/T.png" alt="Toby Kutz: Front End" /></a></div>
         <div id="myTopNav" class="topNav">
             <div id="links" class="links">
                 <a href="Index.html">
@@ -47,39 +47,115 @@
             <div id="self" class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <div class="photo"><img src="Resources\Images\3-self.jpg"
+                    <div class="photo"><img src="Resources/Images/3-self.jpg"
                         alt="Photo of Toby Kutz in orange helmet, with blue sky in the background"></div>
                   </div>
                   <div class="flip-card-back">
-                    <h2>Experience</h2>
-                    <p>Started programming in 2022</p>
-                    <p>Computer Science Courses at University of Illinois</p>
-                    <i>Worked with Kotlin and C++</i>
-                      <p>Graphic design work for local queer newsletter</p>
-                      <p>Codecademy Courses</p>
-                      <i>Worked with HTML, CSS, JavaScript, and SQL</i>
-                      <p>Self-led projects</p>
+                    <h2>About me</h2>
+                    <p>Pronouns: <strong>He/They</strong></p>
+                    <p>Astrology Sign: <strong>Sagittarius</strong></p>
+                      <p>Favorite Colors: <strong>Yellow, Blue, Green</strong></p>
+                      <p>Favorite Quote: <strong>"History isn't something you look back at and say it was inevitable, it happens because people make decisions that are sometimes very impulsive and of the moment, but those moments are cumulative realities."
+                        </strong>— Marsha P. Johnson</p>
                   </div>
                 </div>
               </div>
     </div>
     <!--Add images of cooking, art, etc. Flip cards with descriptions on back?-->
-    <script src="script.js"></script>
+    <div class="otherWorks" id="artWork">
+        <h2>Art Works and Projects</h2>
+        <div class="flip-card-container">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="Resources/Images/PXL_20220303_231702122.MP.jpg"
+                            alt="Photo of Toby Kutz in mask made of dried citrus fruits">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Feelin' Juicy</h3>
+                        <p>Materials:</p>
+                        <ul>
+                            <li>Dried citrus fruits</li>
+                            <li>Metal Grommets</li>
+                            <li>Fishnet Stockings</li>
+                            <li>Thread</li>
+                            <li>Zipper</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="Resources/Images/IMG_20211212_193446_01.jpg"
+                            alt="Photo of a stuffed version of Bill Cipher">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Bill Cipher Stuffy</h3>
+                        <p>Materials:</p>
+                        <ul>
+                            <li>Thrifted fabric</li>
+                            <li>Cardboard</li>
+                            <li>Thread</li>
+                            <li>Stuffing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="Resources/Images/IMG_20220621_162718_422.webp"
+                            alt="Photo of cake with white frosting, carrot roses, and a green leaf sticking from the top">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Pistachio Brown Butter Carrot Cake</h3>
+                        <p>Materials:</p>
+                        <ul>
+                            <li>Carrots formed into roses</li>
+                            <li>Basil Leaf</li>
+                            <li>Pistachios</li>
+                            <li>Strawberries</li>
+                            <li>Glass serving tray</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                      <img src="Resources/Images/PXL_20210529_003641424.MP.jpg"
+                          alt="Photo of Toby in handmade apron">
+                  </div>
+                  <div class="flip-card-back">
+                      <h3>90's themed troll apron</h3>
+                      <p>Materials:</p>
+                      <ul>
+                          <li>Thrifted fabric</li>
+                          <li>Thread</li>
+                          <li>Sewing machine</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+    <footer>
+        <div id="icons">
+        <a  href="https://github.com/dashboard">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/toby-kutz-a17438244/">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/toobee_777/">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://open.spotify.com/user/madipoooo?si=a3bab2cc647042db">
+            <i class="fa-brands fa-spotify"></i>
+        </a>
+    </div>
+    </footer>
 </body>
-<footer>
-    <div id="icons" class="icons">
-    <a  href="https://github.com/dashboard">
-        <i class="fa-brands fa-github"></i>
-    </a>
-    <a href="https://www.linkedin.com/in/toby-kutz-a17438244/">
-        <i class="fa-brands fa-linkedin"></i>
-    </a>
-    <a href="https://www.instagram.com/toobee_777/">
-        <i class="fa-brands fa-instagram"></i>
-    </a>
-    <a href="https://open.spotify.com/user/madipoooo?si=a3bab2cc647042db">
-        <i class="fa-brands fa-spotify"></i>
-    </a>
-</div>
-</footer>
 </html>

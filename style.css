@@ -261,7 +261,7 @@ margin-left: 85px;}
     z-index: 1;
   }
   
-  .flip-card-inner {
+   .flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
@@ -284,7 +284,7 @@ margin-left: 85px;}
   }
 
   /* Style the back side*/
-#self .flip-card-back {
+.flip-card-back {
     background-color: #a7bafe;
     color: black;
     transform: rotateY(180deg);
@@ -292,20 +292,15 @@ margin-left: 85px;}
     border: 2px dashed black;
   }
 
-  #self .flip-card-back h2 {
+  .flip-card-back h2 {
     font-family: "Rock Salt", cursive;
     text-decoration: underline;
     font-size: 16px;
   }
-  #self .flip-card-back p {
+   .flip-card-back p {
     font-family: "Open Sans", sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-  }
-
-  #self .flip-card-back i {
-    font-family: "Open Sans", sans-serif;
-    font-size: 10px;
+    font-size: 13px;
+    
   }
 
   /*Media queries for flip card*/
@@ -322,9 +317,106 @@ margin-left: 85px;}
     }
   }
   @media screen and (max-width: 975px) {
-    .flip-card {display: none;}
+    #self .flip-card {display: none;}
   }
-  
+
+/*Other works styles*/
+#artWork {
+  background-color: #a7bafe;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#artWork h2 {
+  font-family: "Rock Salt", cursive;
+  text-decoration: underline;
+  font-size: 25px;
+}
+
+
+#artWork .flip-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.flip-card-container .flip-card {
+  background-color: transparent;
+  height: 300px;
+  width: 300px;
+  perspective: 1000px;
+  margin: 5px;
+  margin-top: 25px;
+}
+
+.flip-card-container .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-container .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-container .flip-card-front, .flip-card-container .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.flip-card-container .flip-card-front {
+  background-color: transparent;
+}
+
+.flip-card-container .flip-card-front img {
+  height: 300px;
+  width: auto;
+  object-fit: cover;
+  border: 2px solid black;
+}
+
+.flip-card-container .flip-card-back {
+  background-color: #f79be7;
+  color: black;
+  transform: rotateY(180deg);
+  text-decoration: none;
+  border: 2px dashed black;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flip-card-container .flip-card-back h3 {
+  font-family: "Rock Salt", cursive;
+  text-decoration: underline;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.flip-card-container .flip-card-back li {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  list-style: none;
+}
+
+.flip-card-container .flip-card-back p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
 /*Projects Styles*/
 .projects {
     margin-top: 9rem;
@@ -656,9 +748,21 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 /*Footer Styles*/
-footer .icons{
-  height: 100px;
-  margin-top: 5px;
-  color: #85afff;
-  }
+#icons {
+  font-size: 20px;
+  background-color: #f79be7;
+}
+
+#icons i {
+  color: black;
+  margin-top: 20px;
+  transition: color 250ms linear;
+}
   
+#icons i:hover {
+  color: #85afff;
+}
+
+#icons a {
+  text-decoration: none;
+}
