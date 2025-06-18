@@ -615,3 +615,11 @@
       return temp;
     };
   }
+
+  document.addEventListener('keydown', function(event) {
+    if (event.key === "ArrowUp" || event.keyCode === 38) {
+        event.preventDefault();
+        // Your Tetris rotate logic here
+    }
+    // ... handle other keys
+  });
