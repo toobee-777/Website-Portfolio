@@ -260,6 +260,9 @@
           case 40:
             this.move('D');
             break;
+          case 32: //spacebar: slam
+            this.slam();
+            break;
           case 27: //esc: pause
             this.togglePause();
             break;
@@ -317,7 +320,7 @@
       gameOver: function () {
         this.clearTimers();
         isStart = false;
-        this.canvas.innerHTML = '&lt;h1&gt;GAME OVER&lt;/h1gt;';
+        this.canvas.innerHTML = '<h1 style="text-align: center; padding-top: 200px; margin: 0; font-size: 30px;">GAME OVER</h1>';
       },
       play: function () {
         var me = this;
@@ -398,6 +401,19 @@
           }
           this.curComplete = true;
         }
+      },
+      slam: function () {
+        // Move the piece down until it can't move anymore
+        while (this.checkMove(this.curX, this.curY + 1, this.curShape)) {
+          this.curY += 1;
+          // Update the visual position of the squares
+          this.curSqs.eachdo(function () {
+            var currentTop = parseInt(this.style.top, 10);
+            this.style.top = (currentTop + 20) + 'px';
+          });
+        }
+        // Mark the piece as complete so it gets placed
+        this.curComplete = true;
       },
       rotate: function () {
         if (this.curShapeIndex !== 6) {
