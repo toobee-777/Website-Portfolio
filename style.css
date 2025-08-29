@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-  background-color: #ffcf3b;
+  background-image: repeating-linear-gradient(65deg, rgba(133, 175, 255, 1), rgba(247, 155, 231, 1), rgba(196, 220, 73, 1), white);
 }
 /*Header*/
 header{
@@ -15,12 +15,12 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffcf3b;
+    background-color: rgba(255, 207, 59, 1);
     padding: 1rem;
     margin-bottom: 1rem;
     height: 150px;
     width: 100%;
-    border-bottom: 3px solid #855c75;
+    border-bottom: 3px solid rgba(133, 92, 117, 1);
     gap: 1rem;
     z-index: 10;
 }
@@ -59,7 +59,7 @@ header{
 }
 
 .topNav a:hover {
-    color: #85afff;
+    color: rgba(133, 175, 255, 1);
 }
 
 .topNav .icon {
@@ -68,7 +68,7 @@ header{
 
 
 .button {
-  background-color: #fcb37b;
+  background-color: rgba(252, 179, 123, 1);
   border: 2px solid black;
   color: black;
   padding: 15px;
@@ -82,10 +82,11 @@ header{
   border-radius: 12px;
   transition: all 250ms linear;
   font-weight: bold;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .button:hover {
-    background-color: #85afff;
+    background-color: rgba(133, 175, 255, 1);
 }
 
 /*Media queries for topHeader*/
@@ -98,7 +99,7 @@ padding-left: 0px;}
  
 }
 
-@media screen and (max-width: 875px) and (min-width:600px){
+@media screen and (max-width: 875px) and (min-width: 600px) {
   .topNav a {
     font-size: 17px;
   }
@@ -106,7 +107,7 @@ padding-left: 0px;}
 
 
 @media screen and (max-width: 600px) {
-  .topNav a{display: none;}
+  .topNav a {display: none;}
   .topNav a.icon {
     float: right;
     display: block;
@@ -137,8 +138,8 @@ padding-left: 0px;}
   }
 }
 
-@media screen and (max-width: 780px) and (min-width:600px) {
-  .topNav a{display: none;}
+@media screen and (max-width: 780px) and (min-width: 600px) {
+  .topNav a {display: none;}
   .topNav a.icon {
     float: right;
     display: block;
@@ -151,7 +152,7 @@ padding-left: 0px;}
   }
 }
 
-@media screen and (max-width: 780px) and (min-width:600px){
+@media screen and (max-width: 780px) and (min-width: 600px) {
   .topNav.responsive {position: relative;}
   .topNav.responsive .icon {
     position: absolute;
@@ -175,12 +176,12 @@ padding-left: 0px;}
     width: 100%;
     padding-top: 10rem;
     max-height: 700px;
-    background-color: #c4dc49;
+    /*background-color: #c4dc49;*/
     background-size: cover;
     padding-left: 15px;
    padding-bottom: 15px;
-   border: 20px solid #fcb37b;
-   border-top: 25px solid #fcb37b;
+   /*border: 20px solid #fcb37b;
+   border-top: 25px solid #fcb37b;*/
 }
 
 #about-container .header {
@@ -188,14 +189,17 @@ padding-left: 0px;}
     text-align: center;
     text-decoration: underline;
     font-family: "Rock Salt", cursive;
+    font-size: 25px;
 }
 
 #about-container .content {
     grid-area: content;
-    border: 2px dashed black;
+    border: 2px solid black;
     font-size: 20px;
     font-weight: bold;
     font-family: "Open Sans", sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #about-container span {
@@ -222,7 +226,7 @@ padding-left: 0px;}
     width: auto;
   margin-right: 35px;}
 }
-@media screen and (max-width: 975px) and (min-width:600px){
+@media screen and (max-width: 975px) and (min-width: 600px) {
   #about-container .header {grid-area: 1 / span 0;
   font-size: 16px;}
   #about-container .content {grid-area: 1 / span 0;
@@ -285,11 +289,11 @@ margin-left: 85px;}
 
   /* Style the back side*/
 .flip-card-back {
-    background-color: #a7bafe;
+    background-color: rgba(167, 186, 254, 1);
     color: black;
     transform: rotateY(180deg);
     text-decoration: none;
-    border: 2px dashed black;
+    border: 2px solid black;
   }
 
   .flip-card-back h2 {
@@ -322,7 +326,7 @@ margin-left: 85px;}
 
 /*Other works styles*/
 #artWork {
-  background-color: #a7bafe;
+  /*background-color: #a7bafe;*/
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -384,11 +388,11 @@ margin-left: 85px;}
 }
 
 .flip-card-container .flip-card-back {
-  background-color: #f79be7;
+  background-color: bisque;
   color: black;
   transform: rotateY(180deg);
   text-decoration: none;
-  border: 2px dashed black;
+  border: 2px solid black;
   padding: 15px;
   display: flex;
   flex-direction: column;
@@ -420,8 +424,8 @@ margin-left: 85px;}
 /*Projects Styles*/
 .projects {
     margin-top: 9rem;
-    background-color: #a7bafe;
-    border-bottom: 25px solid #fea7ef;
+    margin-bottom: 10px;
+    /*border-bottom: 25px solid rgba(254, 167, 239, 0.7);*/
     font-family: "Open Sans", sans-serif;
 }
 
@@ -429,7 +433,7 @@ margin-left: 85px;}
     font-family: "Rock Salt", cursive;
     font-size: 25px;
     text-decoration: underline;
-    background-color: #fea7ef;
+    /*background-color: rgba(254, 167, 239, 0.7);*/
     padding: 15px;
     text-align: center;
 }
@@ -438,10 +442,11 @@ margin-left: 85px;}
   display: block;
     font-weight: bold;
     font-size: 20px;
-    list-style:none;
+    list-style: none;
     margin-left: 15px;
     margin-right: 25px;
     padding-left: 15px;
+    background-color: rgba(167, 186, 254, 0.6);
     
 }
 .projects i {
@@ -451,18 +456,22 @@ margin-left: 85px;}
     margin-right: 25px;
     padding-left: 15px;
     font-family: "Open Sans", sans-serif;
+    background-color: rgba(167, 186, 254, 0.6);
 }
 
 .projectExamples {
   display: block;
-  border-bottom: 25px solid #fcb37b;
+  /*border-bottom: 25px solid rgba(252, 179, 123, 0.7);*/
+  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .projectExamples h2 {
   font-family: "Rock Salt", cursive;
   font-size: 25px;
   text-decoration: underline;
-  background-color: #fcb37b;
+  /*background-color: rgba(252, 179, 123, 0.7);*/
   padding: 15px;
   text-align: center;
 }
@@ -490,11 +499,11 @@ margin-left: 85px;}
 /*Resume Styles*/
 .resume {
   margin-top: 9rem;
-  background-color: bisque;
+  background-image: repeating-linear-gradient(to bottom right, #85afff, #fcb37b, #f79be7, #c4dc49, white);
   font-family: "Open Sans", sans-serif;
-  padding-left:10px;
+  padding-left: 10px;
   padding-right: 10px;
-  padding-bottom: 10PX;
+  padding-bottom: 10px;
 }
 
 .resume h2 {
@@ -502,45 +511,129 @@ margin-left: 85px;}
   text-align: center;
   text-decoration: underline;
   margin-left: 10px;
+  font-size: 25px;
 }
 
 .resume li {
-  list-style:none;
+  list-style: none;
   margin-left: 10px;
 }
 
 .education {
-  background-color: #c4dc49;
-  padding-top:10px;
+  background-color: rgba(196, 220, 73, 0.7);
+  padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 20px;
+}
+
+.education h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.education li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.education i {
+  font-size: 14px;
+  font-style: italic;
 }
 
 .skills {
-  background-color: #ffcf3b;
+  background-color: rgba(255, 207, 59, 0.7);
   margin-top: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 20px;
+}
+
+.skills h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.skills li {
+  font-size: 16px;
+  margin-bottom: 5px;
 }
 
 .tools {
-  background-color: #f0a000;
+  background-color: rgba(240, 160, 0, 0.7);
   margin-top: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 20px;
+}
+
+.tools h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.tools li {
+  font-size: 16px;
+  margin-bottom: 5px;
 }
 
 .work {
   margin-top: 10px;
-  background-color:#a7bafe;
-  padding-top:10px;
+  background-color: rgba(167, 186, 254, 0.7);
+  padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 20px;
+}
+
+.work h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.work li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.work i {
+  font-size: 14px;
+  font-style: italic;
 }
 
 .programming {
-  background-color: #fea7ef;
-  padding-top:10px;
+  background-color: rgba(254, 167, 239, 0.7);
+  padding-top: 10px;
   padding-bottom: 10px;
   margin-top: 10px;
+  padding-left: 20px;
+}
+
+.programming h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.programming li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.programming i {
+  font-size: 14px;
+  font-style: italic;
+}
+
+/*Media Queries for resume*/
+@media screen and (max-width: 600px) {
+  .resume h2 {font-size: 20px;}
+  .resume h3 {font-size: 16px;}
+  .resume li {font-size: 14px;}
+  .resume i {font-size: 12px;}
 }
 
 /*Contact Form Styles*/
@@ -556,23 +649,24 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-  background-color: #85afff;
-  color: black;
+  background-color: black;
+  color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   transition: all 250ms linear;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 input[type=submit]:hover {
-  background-color: #ffcf3b;
+  background-color: rgba(255, 207, 59, 1);
 }
 
 .form {
   margin-top: 9rem;
   border-radius: 5px;
-  background-color: #c4dc49;
+  background-image: repeating-linear-gradient(200deg, rgba(133, 175, 255, 1), rgba(252, 179, 123, 1), rgba(247, 155, 231, 1), rgba(196, 220, 73, 1), white);
   padding: 25px;
   font-family: "Open Sans", sans-serif;
 }
@@ -641,7 +735,8 @@ input[type=submit]:hover {
 }
 
 .computer-guess {
-  background-color: #c4dc49;
+  background-color: rgba(196, 220, 73, 1);
+  border: 1px solid black;
 }
 
 #computer-guess {
@@ -651,8 +746,8 @@ input[type=submit]:hover {
 }
 
 .human-guess {
-  border: 1px solid #979797;
-  background-color: #fea7ef;
+  border: 1px solid black;
+  background-color: rgba(255, 207, 59, 1);
 }
 
 .guess input {
@@ -670,28 +765,28 @@ input[type=submit]:hover {
 }
 
 .number-control {
-  border: solid 1px #4c7ef3;
+  border: 1px solid rgba(76, 126, 243, 1);
   display: inline-block;
   width: 45px;
   height: 35px;
   font-size: 24px;
   font-weight: 700;
-  color: #c4dc49;
-  background-color: #85afff;
+  color: black;
+  background-color: rgba(133, 175, 255, 1);
   cursor: pointer;
 }
 
 .number-controls button[disabled] {
-  color: #dfdfdf;
-  background-color: #c4dc49;
+  color: black;
+  background-color: rgba(196, 220, 73, 1);
   cursor: default;
 }
 
 .left {
   border-top-left-radius: 22.5px;
   border-bottom-left-radius: 22.5px;
-  background-color: #fcb37b;
-  color: #85afff;
+  background-color: rgba(252, 179, 123, 1);
+  color: black;
 }
 
 .right {
@@ -709,7 +804,7 @@ input[type=submit]:hover {
   padding: 20px;
   width: 169px;
   height: 59px;
-  border: none;
+  border: 2px solid black;
   font-weight: 700;
   font-size: 14px;
 }
@@ -729,13 +824,13 @@ input[type=number]::-webkit-inner-spin-button {
 }
   
 #guess .button[disabled] {
-  background-color: #d2d2d2;
-  color: #a0a0a0;
+  background-color: rgba(210, 210, 210, 1);
+  color: rgba(160, 160, 160, 1);
   cursor: default;
 }
 
 .instructions {
-  background-color: #85afff;
+  background-color: rgba(133, 175, 255, 1);
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -752,14 +847,14 @@ input[type=number]::-webkit-inner-spin-button {
 
 
 .winning-text, .winning-text[disabled] {
-  color: #ec3636;
+  color: rgba(236, 54, 54, 1);
   font-weight: 700;
 }
 
 /*Footer Styles*/
 footer {
   font-size: 20px;
-  background-color: #f79be7;
+  background-color: rgba(255, 207, 59, 1);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -777,7 +872,7 @@ footer {
 }
   
 #icons i:hover {
-  color: #85afff;
+  color: rgba(133, 175, 255, 1);
 }
 
 #icons a {
@@ -794,15 +889,15 @@ footer {
   width: 360px;
   border: 1px solid black;
   padding: 20px;
-  background: #d7d7d7;
+  background: rgba(215, 215, 215, 1);
   margin: 0 auto;
 }
 #canvas {
   width: 200px;
   height: 440px;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 1);
   position: relative;
-  color: #fff;
+  color: rgba(255, 255, 255, 1);
 }
 #canvas h1 {
   margin: 0;
@@ -818,21 +913,21 @@ footer {
 
 #start{
   animation: blink .7s steps(2, start) infinite;
-  background: #E1FF5F;
+  background: rgba(225, 255, 95, 1);
   border-radius: 2px;
-  color: #202020;
+  color: rgba(32, 32, 32, 1);
   cursor: pointer;
   font-size: 28px;
 }
 
 @keyframes blink {
   to {
-    outline: #E1FF5F solid 1px;
+    outline: rgba(225, 255, 95, 1) solid 1px;
   }
 }
 
 .red{
-  color: #f00000;
+  color: rgba(240, 0, 0, 1);
 }
 
 .square {
@@ -842,36 +937,36 @@ footer {
   border: 1px solid white;
 }
 .type0 {
-  background-color: #a000f0;
+  background-color: rgba(160, 0, 240, 1);
 }
 .type1 {
-  background-color: #00f0f0;
+  background-color: rgba(0, 240, 240, 1);
 }
 .type2 {
-  background-color: #f0a000;
+  background-color: rgba(240, 160, 0, 1);
 }
 .type3 {
-  background-color: #0000f0;
+  background-color: rgba(0, 0, 240, 1);
 }
 .type4 {
-  background-color: #00f000;
+  background-color: rgba(0, 240, 0, 1);
 }
 .type5 {
-  background-color: #f00000;
+  background-color: rgba(240, 0, 0, 1);
 }
 .type6 {
-  background-color: #f0f000;
+  background-color: rgba(240, 240, 0, 1);
 }
 #next_shape {
   position: relative;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 1);
   border: 1px solid white;
   width: 110px;
   height: 110px;
 }
 #info {
-  background-color: #000;
-  color: #fff;
+  background-color: rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 1);
   float: right;
   width: 110px;
   height: 420px;
